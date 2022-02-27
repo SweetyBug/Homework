@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.Write("Введите первое число: ");
+double numberFirst = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите второе число: ");
+double numberSecond = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите третье число: ");
+double numberThird = Convert.ToDouble(Console.ReadLine());
+double max = numberFirst;
+if (max < numberSecond) max = numberSecond;
+if (max < numberThird) max = numberThird;
+Console.Write("Максимальное число: " + max);
